@@ -1,0 +1,21 @@
+<p255>
+<div class="DivHomeProd" <DataAttribute> id="DivProd<IDProduto>" onclick="NoCascate('<URLProd>');">
+  <div class="DivHomeImagemProd" id="DivImagemProdDouble<IDProduto>" onclick="NoCascate('<URLProd>');"></div>
+  <div class="DivIntHomeProd"> 
+    <div class="DivHomeNomeProd"><span class="HomeNomeProd text-overflow font-16"><NomeProd></span></div>
+    <div class="DivHomePriceProd" style="white-space:nowrap;">
+      <div id="idProdPrice<IDProduto>"></div> 
+      <div class="PriceAVistaLista" id="ProdDesc<IDProduto>"></div>
+    </div>
+    <div class="DivHomeSpy hide-small"><a href="#Spy" rel="nofollow" onclick='bCascate=true;FCLib$.OpenRWD("<url-prod-id><IDProduto>&sty=9&int=1","Disp","width=700,height=700")'>Espiar</a></div>
+    <div class="DivHomeDetails"><a href="<URLProd>">Detalhes</a></div>
+  </div>
+</div>
+<script>
+FCLib$.onReady(function(){
+  sF$.fnChangeImages("<ImagemProdPri>","<ImagemProdDet>","<URLProd>","<IDProduto>","<NomeProdUA>");
+  sF$.fnShowProd(<PrecoNum>,<PrecoOri>,'<CodProd>',<MaxParcelasProdNum>,<IDProduto>)
+});
+</script>
+</p255>
+
